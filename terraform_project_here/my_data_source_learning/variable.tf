@@ -14,7 +14,7 @@ variable "instance_type" {
 variable "my_ec2_tags" {
   type = map                           # map = key-value pairs
   default = {
-    Name      = "Learning_count"  # tag Name
+    Name      = "learn_data_source"  # tag Name
     Terraform = true                     # tag indicating Terraform managed
     Project   = "my project here"        # tag for project name
   }
@@ -23,7 +23,7 @@ variable "my_ec2_tags" {
 # Security group name
 variable "sg_name" {
   type        = string
-  default     = "foreach_security_group"       
+  default     = "data_source_security_group"       
   description = "security group name to attach to EC2 instance here"
 }
 # Starting port for security group rule
@@ -50,7 +50,7 @@ variable "cidr_blocks" {
 variable "sg_tags_here" {
   type = map
   default = {
-    Name      = "foreach_security_group"       # tag Name
+    Name      = "data_source_security_group"       # tag Name
     Terraform = true                     # tag indicating Terraform managed
   }
 }

@@ -1,5 +1,5 @@
 # -> AWS Security Group resource
-resource "aws_security_group" "foreach_security_group" {
+resource "aws_security_group" "data_source_security_group" {
   
   # Name of the security group (from variable)
   name = var.sg_name
