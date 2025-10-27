@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "../my_vpc_creation"
+    source = "git::https://github.com/Teja-Coding/Terraform_Here.git//terraform_project_here/my_vpc_creation"
 #   vpc_cidr = "10.0.0.0/16"
 #   project_name = "roboshop"
 #   enviroment = "dev"
